@@ -11,12 +11,16 @@ while True:
         continue
     else:
         break
-# highest_bidder = None
-# for value in auction_dictionary.values():
-#     if highest_bidder is None or value > highest_bidder:
-#         highest_bidder = value
-#     print(highest_bidder)
+# def find_highest(inicial_dictionary):
+#     highest_bid = None
+#     highest_bidder = None
+#     for bidder, bid in auction_dictionary.items():
+#         if highest_bid is None or bid > highest_bid:
+#             highest_bid = bid
+#             highest_bidder = bidder
+#     return highest_bidder, highest_bid
 highest_bid = 0
+winner = ""
 for bidder in auction_dictionary:
     bid_amount = auction_dictionary[bidder]
     if bid_amount > highest_bid:
